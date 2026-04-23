@@ -1,26 +1,36 @@
 {
-  "name": "@overextended/fx-utils",
-  "version": "0.0.4",
-  "description": "",
-  "type": "module",
-  "main": "./dist/index.js",
-  "bin": {
-    "fxdoc": "./dist/bin/fxdoc.js"
+  "name": "@communityox/fx-utils",
+  "version": "0.0.5",
+  "description": "WIP development tools when working with the Cfx platform.",
+  "keywords": [
+    "fivem",
+    "overextended",
+    "communityox",
+    "fxutils"
+  ],
+  "funding": "https://ko-fi.com/thelindat",
+  "bugs": "https://github.com/CommunityOx/fx-utils/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CommunityOx/fx-utils.git"
   },
+  "license": "MIT",
+  "author": "https://github.com/thelindat/",
+  "type": "module",
   "exports": {
     ".": "./dist/index.js"
   },
-  "scripts": {
-    "prepare": "tsc"
+  "main": "./dist/index.js",
+  "bin": {
+    "fxdoc": "./dist/bin/fxdoc.js"
   },
   "files": [
     "./dist/**/*.js",
     "./dist/**/*.d.ts"
   ],
-  "keywords": [],
-  "author": "https://github.com/thelindat/",
-  "funding": "https://ko-fi.com/thelindat",
-  "license": "MIT",
+  "scripts": {
+    "prepare": "tsc"
+  },
   "dependencies": {
     "esbuild": "^0.23.1",
     "tsc-alias": "^1.8.10"
