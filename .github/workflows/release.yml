@@ -57,6 +57,9 @@ jobs:
         with:
           node-version: "24"
 
+      - name: Build
+        run: bun tsc
+
       - name: Publish package to npm registry
         run: npm publish --access public
 

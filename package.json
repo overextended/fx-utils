@@ -21,7 +21,7 @@
   },
   "main": "./dist/index.js",
   "bin": {
-    "fxdoc": "./dist/bin/fxdoc.js"
+    "fxdoc": "dist/bin/fxdoc.js"
   },
   "files": [
     "./dist/**/*.js",
