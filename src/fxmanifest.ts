@@ -31,6 +31,7 @@ function reduceObject(object: Record<string, string>): string {
  */
 interface FxResourceManifest {
   client_scripts?: string[];
+  shared_scripts?: string[];
   server_scripts?: string[];
   shared_scripts?: string[];
   files?: string[];
@@ -45,6 +46,7 @@ interface FxResourceManifest {
  */
 export async function createFxmanifest({
   client_scripts,
+  shared_scripts,
   server_scripts,
   shared_scripts,
   files,
@@ -67,6 +69,7 @@ export async function createFxmanifest({
   let output = reduceObject(fxmanifest);
   output += reduceArray("files", files);
   output += reduceArray("dependencies", dependencies);
+  output += reduceArray("shared_scripts", shared_scripts);
   output += reduceArray("client_scripts", client_scripts);
   output += reduceArray("server_scripts", server_scripts);
   output += reduceArray("shared_scripts", shared_scripts);
